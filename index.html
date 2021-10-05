@@ -8,8 +8,19 @@
     </head>
 
     <body>
-        <img id = 'logo' src="./projectlogo.png" alt="logo">
-
+        <div id = 'logo-container'>
+            <img id = 'logo' src="./projectlogo.png" alt="logo">
+        </div>
+        <div id = 'intro-containter' >
+            <h1> Hey pictureLover, what kind of pictures do you want to see today??</h1>
+            <label for="select-type" id = 'dropdown-label'>Select your preference: </label>
+            <select id="option-dropdown" name="select-type">
+                <option value="both" selected >I don't have a preference</option>
+                <option value="greyscale">Greyscale</option>
+                <option value="blurr">Blurr</option>
+              </select>
+        </div>
+        <h1> Here are our top picks for you! </h1>
         <div class='imgage-container'>
             <div class='image-card'>
                 <img id="card-image" class="image" src="./0C83C2DF-64FF-4A2E-80B9-A41923D4B3D6_1_105_c.jpeg" alt="Photo" />
@@ -17,18 +28,12 @@
                     <span id="like-count" class="likes">0 likes</span>
                     <button id="like-button" class="like-button">👍</button>
                     <button id="dislike-button" class="dislike-button">👎</button>
-            </div>
+                </div>
                 <ul id="comments-list" class="comments">
-                    <li>Comments go here</li>
+                    <li>Comments go here...</li>
                 </ul>
                 <form id="comment-form" class="comment-form">
-                    <input
-                    class="comment-input"
-                    type="text"
-                    name="comment"
-                    id="comment"
-                    placeholder="Add a comment..."
-                    />
+                    <input class="comment-input" type="text" name="comment" id="comment" placeholder="Add a comment..."/>
                     <button class="comment-button" type="submit">Post</button>
                 </form>
             </div>
