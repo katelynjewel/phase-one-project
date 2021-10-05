@@ -21,8 +21,8 @@ body {
 }
 
 .image-card {
-    width: 300px;
-    border: 1px solid #00000020;
+    width: 610px;
+    border: 5px solid #00000020;
     border-radius: 2px;
     text-align: left;
     background-color: floralwhite;
@@ -34,3 +34,95 @@ body {
     width: 600px;
     /* border: 3px solid black; */
 }
+
+
+.reaction-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.likes {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.like-button {
+    font-size: 2.3rem;
+    border: none;
+    background: none;
+    transition: color 300ms;
+    cursor: pointer;
+}
+
+.dislike-button {
+    font-size: 2.3rem;
+    border: none;
+    background: none;
+    transition: color 300ms;
+    cursor: pointer;
+}
+
+/* .like-button:hover {
+    color: rgb(241, 71, 19);
+}
+
+.like-button:active {
+    color: rgb(253, 159, 124);
+}
+
+.like-button:focus {
+    outline: none;
+} */
+
+
+.comments {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+
+.comments li {
+    margin: 2px 0;
+    letter-spacing: 0.2px;
+}
+
+.comment-form {
+    width: 100%;
+    border-top: 1px solid #00000020;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.comment-input {
+    width: 83%;
+    border: none;
+    font-size: 1.3rem;
+}
+
+.comment-input:focus {
+    outline: none;
+}
+
+.comment-button {
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(92, 114, 238);
+    cursor: pointer;
+    transition: color 300ms;
+}
+/*   
+  .comment-button:hover {
+    color: rgb(37, 68, 245);
+  }
+  
+  .comment-button:active {
+    color: rgb(127, 146, 250);
+  }
+  
+  .comment-button:focus {
+    outline: none;
+  } */
