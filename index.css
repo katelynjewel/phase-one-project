@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    text-align: center;
+    background-color: floralwhite;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-card {
+    width: 300px;
+    border: 1px solid #00000020;
+    border-radius: 2px;
+    text-align: left;
+    background-color: floralwhite;
+    display: block;
+    margin: auto;
+}
+
+.image {
+    width: 600px;
+    /* border: 3px solid black; */
+}
