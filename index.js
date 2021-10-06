@@ -2,6 +2,36 @@ const imgDiv = document.querySelector('.image-card')
 const imgContainterDiv = document.querySelector('.image-container')
 let baseUrl = 'http://localhost:3000/'
 
+let ul = document.getElementById('comments-list')
+ul.replaceChildren()
+
+function defaultPhoto() {
+
+    document.getElementById('comment-form').addEventListener('submit', (event) => {
+        event.preventDefault()
+
+        const comment = event.target['comment'].value
+        const li = document.createElement('li')
+
+        li.textContent = comment
+        ul.append(li)
+
+        event.target.reset()
+    })
+
+    let likes = 0
+
+    document.getElementById('like-button').addEventListener('click', (event) => {
+        ++likes
+        document.getElementById('like-count').textContent = `${likes} likes`
+    })
+
+    document.getElementById('dislike-button').addEventListener('click', (event) => {
+        --likes
+        document.getElementById('like-count').textContent = `${likes} likes`
+    })
+}
+defaultPhoto()
 
 function getPictures (){
     const dropDown = document.querySelector('#option-dropdown')
@@ -17,7 +47,7 @@ function getPictures (){
      })
     }) 
 }
- getPictures()
+getPictures()
 
 function renderPic(items){
     const imgCard = document.createElement('div')
@@ -45,7 +75,33 @@ function renderPic(items){
     post.setAttribute = ('type', 'submit')
     post.textContent = ' Post '
     commentInput.className = 'comment-input'
+    commentInput.id = 'comment'
     commentInput.placeholder = "Add a comment..."
+
+    let likes = 0
+
+    likesBtn.addEventListener('click', (event) => {
+        ++likes
+        likesDisplay.textContent = `${likes} likes`
+    })
+
+    dislikeBtn.addEventListener('click', (event) => {
+        --likes
+        likesDisplay.textContent = `${likes} likes`
+    })
+
+    commentForm.addEventListener('submit', (event) => {
+        event.preventDefault()
+    
+        const comment = commentInput.value
+        const li = document.createElement('li')
+        li.className = 'comments'
+    
+        li.textContent = comment
+        ul.append(li)
+    
+        event.target.reset()
+    })
 
     img.src = items.imageUrl
     img.alt = 'image display'
@@ -55,4 +111,5 @@ function renderPic(items){
     imgContainterDiv.append(imgCard)
     commentForm.append(ul,commentInput, post)
 }
+
 

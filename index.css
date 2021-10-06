@@ -109,7 +109,7 @@ h1 {
     cursor: pointer;
 }
 
-/* .like-button:hover {
+.like-button:hover {
     color: rgb(241, 71, 19);
 }
 
@@ -119,7 +119,7 @@ h1 {
 
 .like-button:focus {
     outline: none;
-} */
+}
 
 
 .comments {
@@ -127,6 +127,7 @@ h1 {
     margin-left: 0;
     padding-left: 10px;
     font-size: 1.3rem;
+    align-content: flex-start;
 }
 
 .comments li {
@@ -159,7 +160,7 @@ h1 {
     cursor: pointer;
     transition: color 300ms;
 }
-/*   
+  
   .comment-button:hover {
     color: rgb(37, 68, 245);
   }
@@ -170,4 +171,4 @@ h1 {
   
   .comment-button:focus {
     outline: none;
-  } */
+  }
