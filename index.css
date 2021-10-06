@@ -15,7 +15,6 @@ body {
     
     height: 200px;
     width: 300px;
-    
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
@@ -39,7 +38,7 @@ h1 {
     text-align: center;
     font:xx-large;
     font-weight:bolder;
-    font-family: fantasy;
+    font-family: gagalin;
     padding: 20px;
 }
 
