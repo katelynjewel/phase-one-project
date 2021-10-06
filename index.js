@@ -1,10 +1,22 @@
 const imgDiv = document.querySelector('.image-card')
 const imgContainterDiv = document.querySelector('.image-container')
+const baseUrl = 'http://localhost:3000/pictures'
 
+function getPictures (){
+    fetch (baseUrl)
+    .then (resp => resp.json())
+    .then (pictures => {
+        console.log(pictures)
+        pictures.forEach(element => {
+            renderPic(element)
+        });
+        
+    })
+}
+getPictures()
 
-
-renderPic()
-function renderPic(){
+//renderPic()
+function renderPic(items){
     const imgCard = document.createElement('div')
     const reaction = document.createElement('div')
     const img = document.createElement('img')
@@ -32,7 +44,7 @@ function renderPic(){
     commentInput.className = 'comment-input'
     commentInput.placeholder = "Add a comment..."
 
-    img.src = "./0C83C2DF-64FF-4A2E-80B9-A41923D4B3D6_1_105_c.jpeg"
+    img.src = items.imageUrl
     img.alt = 'image display'
 
     reaction.append(likesDisplay,likesBtn, dislikeBtn)
