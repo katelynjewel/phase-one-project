@@ -112,4 +112,6 @@ function renderPic(items){
     commentForm.append(ul,commentInput, post)
 }
 
-
+document.getElementById(side-bar).addEventListener('click', (event) => {
+    let newImg = 
+})

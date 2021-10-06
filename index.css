@@ -8,7 +8,6 @@ body {
     padding: 20px;
     text-align: center;
     background-color: floralwhite;
- 
 }
 
 #logo-container {
@@ -54,6 +53,7 @@ h1 {
     font-size: larger;
     font-weight: bold;
 }
+
 
 .image-container {
     width: 100%;
@@ -160,7 +160,7 @@ h1 {
     cursor: pointer;
     transition: color 300ms;
 }
-  
+/*   
   .comment-button:hover {
     color: rgb(37, 68, 245);
   }
@@ -171,4 +171,29 @@ h1 {
   
   .comment-button:focus {
     outline: none;
-  }
+  } */
+
+
+.sidebar {
+    height: 600px;
+    width: 200px;
+    top: 0px;
+    right: 0px;
+    padding-top: 40px;
+    position: -webkit-sticky; /* for Safari users */
+    position: sticky;
+    float: right;
+    background-color: transparent;
+} 
+    
+.sidebar div {
+padding: 8px;
+font-size: 24px;
+display: block;
+}
+
+.sidebar img{
+    height: 60%;
+    width: 60%;
+}
+    
