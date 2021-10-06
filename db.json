@@ -369,7 +369,7 @@
         }
     ],
 
-    "Nature":[
+    "nature":[
         {
             "id": 1,
             "likes": 0,
@@ -432,7 +432,7 @@
         }
     ],
 
-    "goats" : [
+    "babygoats" : [
         {
             "id": 1,
             "likes": 0,

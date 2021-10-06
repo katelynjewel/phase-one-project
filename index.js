@@ -1,21 +1,24 @@
 const imgDiv = document.querySelector('.image-card')
 const imgContainterDiv = document.querySelector('.image-container')
-const baseUrl = 'http://localhost:3000/pictures'
+let baseUrl = 'http://localhost:3000/'
+
 
 function getPictures (){
-    fetch (baseUrl)
-    .then (resp => resp.json())
-    .then (pictures => {
-        console.log(pictures)
-        pictures.forEach(element => {
+    const dropDown = document.querySelector('#option-dropdown')
+    dropDown.addEventListener("change", (e) => {
+        let value = dropDown.value
+        fetch (baseUrl + `${value}`)
+         .then (resp => resp.json())
+         .then (pictures => {
+            imgContainterDiv.replaceChildren()
+            pictures.forEach(element => {
             renderPic(element)
-        });
-        
-    })
+         });  
+     })
+    }) 
 }
-getPictures()
+ getPictures()
 
-//renderPic()
 function renderPic(items){
     const imgCard = document.createElement('div')
     const reaction = document.createElement('div')
@@ -51,6 +54,5 @@ function renderPic(items){
     imgCard.append(img,reaction, commentForm)
     imgContainterDiv.append(imgCard)
     commentForm.append(ul,commentInput, post)
-
 }
 
