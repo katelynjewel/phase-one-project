@@ -1,17 +1,19 @@
 * {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    font-family: monospace;
+    font-variant: small-caps;
     box-sizing: border-box;
 }
 
 body {
     padding: 20px;
     text-align: center;
-    background-color: floralwhite;
+    background-color: floralwhite; 
+    align-content: center;
 }
 
 #logo-container {
-    
     height: 200px;
     width: 300px;
     margin-right: auto;
@@ -37,22 +39,24 @@ h1 {
     text-align: center;
     font:xx-large;
     font-weight:bolder;
-    font-family:fantasy;
+    font-family: monospace;
+    font-variant: small-caps;
     padding: 20px;
 }
 
 #option-dropdown{
-    font-family: fantasy;
+    font-family: monospace;
+    font-variant: small-caps;
     font-size: larger;
     font-weight: bold;
 }
 
 #dropdown-label{
-    font-family: fantasy;
+    font-family: monospace;
+    font-variant: small-caps;
     font-size: larger;
     font-weight: bold;
 }
-
 
 .image-container {
     width: 100%;
@@ -61,7 +65,6 @@ h1 {
     overflow-x:scroll;
     align-items: center;
     flex-direction: column;
-    
 }
 
 .image-card {
@@ -77,7 +80,6 @@ h1 {
 
 .image {
     width: 400px;
-    /* border: 3px solid black; */
 }
 
 
@@ -90,7 +92,8 @@ h1 {
 
 .pinit {
     font-size: 0.9rem;
-    font-family: fantasy;
+    font-family: monospace;
+    font-variant: small-caps;
     padding: 5px;
     background-color: #b3e4dc;
     border-radius: 4px;
@@ -171,56 +174,59 @@ h1 {
     cursor: pointer;
     transition: color 300ms;
 }
-/*   
-  .comment-button:hover {
-    color: rgb(37, 68, 245);
-  }
-  
-  .comment-button:active {
-    color: rgb(127, 146, 250);
-  }
-  
-  .comment-button:focus {
-    outline: none;
-  } */
 
+.comment-button:hover {
+    color: rgb(37, 68, 245);
+}
+
+.comment-button:active {
+    color: rgb(127, 146, 250);
+}
+
+.comment-button:focus {
+    outline: none;
+} 
 
 .sidebar {
-    height: 600px;
-    width: 200px;
-    top: 0px;
-    right: 0px;
+    height: 60%;
+    width: 20%;
     padding-top: 40px;
+    top: 50px;
+    right: 0px;
     position: -webkit-sticky; /* for Safari users */
     position: sticky;
     float: right;
-    background-color: transparent;
+    background-color: grey;
 } 
-    
+
 .sidebar div {
-padding: 8px;
-font-size: 10px;
-display: block;
+    padding: 8px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #side-bar-title h2 {
     text-align: center;
     font:xx-large;
     font-weight:bolder;
-    font-family:fantasy;
+    font-family:monospace;
+    font-variant: small-caps;
     padding: 20px;
 }
 
-#side-bar img {
-    height: 40%;
-    padding: 10px;
+.sidebar img {
+    height: 150px;
+    max-width: inherit;
 }
 
 p {
     text-align: center;
     font:xx-large;
     font-weight:bolder;
-    font-family:fantasy;
+    font-family:monospace;
+    font-variant: small-caps;
     padding: 20px;
 }
 .footer div {
