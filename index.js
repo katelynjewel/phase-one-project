@@ -39,7 +39,23 @@ function renderPic(items){
     post.setAttribute = ('type', 'submit')
     post.textContent = 'Post'
 
-    reaction.append(likesDisplay, likesBtn, dislikeBtn)
+    const pinIt = document.createElement('button')
+    pinIt.className = 'pinit'
+    pinIt.textContent = 'PickIt!'
+
+    pinIt.addEventListener('click', (e) => {
+        console.log(e)
+        const sidebar = document.getElementById('side-bar')
+        const pSideBar = document.querySelector('.sidebar')
+        const newImg = document.createElement('img')
+
+        newImg.src = items.imageUrl
+        sidebar.replaceChildren()
+        sidebar.append(newImg)
+
+    })
+
+    reaction.append(likesDisplay, likesBtn, dislikeBtn, pinIt)
     imgCard.append(img, reaction, commentForm)
     imgContainterDiv.append(imgCard)
     commentForm.append(ul, commentInput, post)
@@ -69,6 +85,7 @@ function renderPic(items){
         event.target.reset()
     })
 }
+
 
 getPictures()
 

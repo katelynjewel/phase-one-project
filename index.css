@@ -8,7 +8,6 @@ body {
     padding: 20px;
     text-align: center;
     background-color: floralwhite;
- 
 }
 
 #logo-container {
@@ -38,7 +37,7 @@ h1 {
     text-align: center;
     font:xx-large;
     font-weight:bolder;
-    font-family: gagalin;
+    font-family:fantasy;
     padding: 20px;
 }
 
@@ -53,6 +52,7 @@ h1 {
     font-size: larger;
     font-weight: bold;
 }
+
 
 .image-container {
     width: 100%;
@@ -86,6 +86,16 @@ h1 {
     justify-content: flex-end;
     align-items: center;
     padding: 0 10px;
+}
+
+.pinit {
+    font-size: 0.9rem;
+    font-family: fantasy;
+    padding: 5px;
+    background-color: #b3e4dc;
+    border-radius: 4px;
+    margin: 5px;
+    opacity: 0.7;
 }
 
 .likes {
@@ -161,7 +171,7 @@ h1 {
     cursor: pointer;
     transition: color 300ms;
 }
-  
+/*   
   .comment-button:hover {
     color: rgb(37, 68, 245);
   }
@@ -172,4 +182,50 @@ h1 {
   
   .comment-button:focus {
     outline: none;
-  }
+  } */
+
+
+.sidebar {
+    height: 600px;
+    width: 200px;
+    top: 0px;
+    right: 0px;
+    padding-top: 40px;
+    position: -webkit-sticky; /* for Safari users */
+    position: sticky;
+    float: right;
+    background-color: transparent;
+} 
+    
+.sidebar div {
+padding: 8px;
+font-size: 10px;
+display: block;
+}
+
+#side-bar-title h2 {
+    text-align: center;
+    font:xx-large;
+    font-weight:bolder;
+    font-family:fantasy;
+    padding: 20px;
+}
+
+#side-bar img {
+    height: 40%;
+    padding: 10px;
+}
+
+p {
+    text-align: center;
+    font:xx-large;
+    font-weight:bolder;
+    font-family:fantasy;
+    padding: 20px;
+}
+.footer div {
+    height:250px;
+    width:100%;
+    border-top:10px double;
+    border-color: violet; 
+}
