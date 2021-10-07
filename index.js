@@ -40,9 +40,20 @@ function renderPic(items){
     post.textContent = 'Post'
 
     const pinIt = document.createElement('button')
-    // const pinBtn = document.getElementById('pinit')
     pinIt.className = 'pinit'
     pinIt.textContent = 'PickIt!'
+
+    pinIt.addEventListener('click', (e) => {
+        console.log(e)
+        const sidebar = document.getElementById('side-bar')
+        const pSideBar = document.querySelector('.sidebar')
+        const newImg = document.createElement('img')
+
+        newImg.src = items.imageUrl
+        sidebar.replaceChildren()
+        sidebar.append(newImg)
+
+    })
 
     reaction.append(likesDisplay, likesBtn, dislikeBtn, pinIt)
     imgCard.append(img, reaction, commentForm)
@@ -75,21 +86,6 @@ function renderPic(items){
     })
 }
 
-pickIt("https://iso.500px.com/wp-content/uploads/2016/05/stock-photo-136664977.jpg")
-
-function pickIt (imageUrl) {
-
-    pinIt.addEventListener('click', (e) => {
-        console.log(e)
-        const sidebar = document.getElementById('side-bar')
-        const newImg = document.createElement('img')
-
-        newImg.src = imageUrl
-        console.log(sidebar)
-        // sidebar.append(newImg)
-
-    })
-}
 
 getPictures()
 
