@@ -88,6 +88,14 @@ h1 {
     padding: 0 10px;
 }
 
+.pinit {
+    font-size: 0.9rem;
+    padding: 5px;
+    background-color: #b3e4dc;
+    border-radius: 4px;
+    margin: 5px;
+}
+
 .likes {
     font-size: 1.1rem;
     font-weight: 600;
@@ -196,4 +204,3 @@ display: block;
     height: 60%;
     width: 60%;
 }
-    

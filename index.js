@@ -112,6 +112,14 @@ function renderPic(items){
     commentForm.append(ul,commentInput, post)
 }
 
-document.getElementById(side-bar).addEventListener('click', (event) => {
-    let newImg = 
-})
+
+    // const pinBtn = documment.getElementById('pinit')
+    // pinBtn.addEventListener('click', (event) => {
+    // const sidebar = document.getElementById('side-bar')
+    // const newImg = document.createElement('img')
+
+    // newImg.src = items.imageUrl
+
+    // sidebar.append(newImg)
+
+    // })
