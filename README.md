@@ -2,6 +2,7 @@
 # Project Title: 
     PICterest Web App - FlatIron Software Engineering Phase One Project
 
+
 # Project Owners: 
     1. Katelyn Richard 
         - GitHub userName - katelynjewel 
@@ -27,6 +28,9 @@
 
 
 # Learnings and Struggles:
-   During the course of building this project, we gathered more experience with handling and manipulating DOM elements, we learned how to build and host our db.json file and we also struggled a lot with our page styling on CSS. Due to our struggles with CSS, our current App is not quite what was original thought out. 
+    During the course of building this project, we gathered more experience with handling and manipulating DOM elements, we learned how to build and host our db.json file and we also struggled a lot with our page styling on CSS. Due to our struggles with CSS, our current App is not quite what was original thought out. 
+
+# Acknowledgments:
+    This project was acheiveable with the help of various creators within the Bootcamp. Many people took time and energy to help problem solve as well as offer advice. 
 
 
