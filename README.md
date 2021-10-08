@@ -33,4 +33,7 @@
 # Acknowledgments:
     This project was acheiveable with the help of various creators within the Bootcamp. Many people took time and energy to help problem solve as well as offer advice. 
 
+# Acknowledgments:
+    This project was acheiveable with the help of various creators within the Bootcamp. Many people took time and energy to help problem solve as well as offer advice. 
+
 
