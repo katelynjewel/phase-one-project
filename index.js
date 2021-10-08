@@ -48,6 +48,7 @@ function renderPic(items){
         const sidebar = document.getElementById('side-bar')
         const pSideBar = document.querySelector('.sidebar')
         const newImg = document.createElement('img')
+        newImg.className = "thumbnail"
 
         newImg.src = items.imageUrl
         sidebar.replaceChildren()
